@@ -23,5 +23,6 @@
       ]
     }
   },
-  "postCreateCommand": "bash -c 'sh .devcontainer/setup.sh'"
+  "postCreateCommand": "bash -c 'sh .devcontainer/setup.sh'",
+  "postStartCommand": "git config --global user.name \"$(git config --global user.name)\" && git config --global user.email \"$(git config --global user.email)\""
 }
