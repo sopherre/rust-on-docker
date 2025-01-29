@@ -1,5 +1,5 @@
 # Rust の公式イメージ（最新バージョン）をベースとして使用
-FROM rust:latest
+FROM rust:latest as builder
 
 # コンテナ内の作業ディレクトリを `/app` に設定
 WORKDIR /app
